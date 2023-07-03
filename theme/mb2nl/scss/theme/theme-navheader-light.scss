@@ -1,0 +1,31 @@
+
+.tnavheader_light {
+
+	--theme-header-shadow-color: rgba(0,0,0,.15);
+
+	.header-inner2 {
+		@include mb2_box_shadow(0 3px 5px, var(--theme-header-shadow-color));
+	}
+
+	&.tpheader_light {
+		--theme-header-shadow-color: rgba(0,0,0,.08);
+	}
+
+}
+
+.tnavheader_light,
+.tnavheader_transparent_light {
+	#main-navigation {
+
+		.main-menu {
+
+			> li {
+
+				> a,
+				> button {
+					color: $headingscolor;
+				}
+	        }
+	    }
+	}
+}
